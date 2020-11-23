@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  myegg:
+    container_name: myegg
+    build:
+      context: .
+      dockerfile: DockerFile
+    restart: always
+    ports:
+      - "7001:7001"
+    depends_on: 
+      - mongo
