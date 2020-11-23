@@ -24,4 +24,5 @@ module.exports = app => {
   router.get('/del', controller.CRUD.del);
   router.get('/update', controller.CRUD.update);
   router.get('/setTOP', controller.CRUD.setTOP);
+  router.post('/upload', controller.upload.index);
 };
